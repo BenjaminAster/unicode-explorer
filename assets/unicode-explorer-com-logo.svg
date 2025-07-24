@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 19 15">
+	<style>
+		path {
+			fill: none;
+			stroke: black;
+		}
+	</style>
+	<g transform="translate(0,-1039.3622)">
+		<g transform="translate(-117.5,703.49998)">
+			<path d="m 118,336.36222 0,12 8,0 0,-12 z" />
+			<path d="m 122,336.36222 0,8" />
+		</g>
+		<g transform="translate(9.5,671.49998)">
+			<path d="m -1,368.36222 0,12 8,0 0,-12 z" />
+			<path d="m 3,372.36222 4,0" />
+			<path d="m 3,376.36222 4,0" />
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,15 @@
+# ignore all files by default...
+/*
+!/*/
+/*/*
+# ...and only include:
+!/assets/*
+!/data/README.md
+!/external/README.md
+!/scripts/*
+!/src/*
+!/.gitignore
+!/app.webmanifest
+!/package.json
+!/README.md
+!/tsconfig.json

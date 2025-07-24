@@ -1,0 +1,21 @@
+{
+	"name": "Unicode Explorer",
+	"scope": "./",
+	"start_url": "./",
+	"display": "standalone",
+	"background_color": "#333333",
+	"icons": [
+		{
+			"src": "./assets/icon.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any monochrome"
+		},
+		{
+			"src": "./assets/icon-maskable.png",
+			"type": "image/png",
+			"sizes": "1024x1024",
+			"purpose": "maskable"
+		}
+	]
+}

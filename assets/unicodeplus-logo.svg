@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="50 50 650 650">
+	<linearGradient id="inner" x1="0" y1="1" x2="0" y2="0">
+		<stop offset="0" stop-color="#0094f2" />
+		<stop offset=".6" stop-color="#2dfffe" />
+		<stop offset="1" stop-color="#2dfffe" />
+	</linearGradient>
+	<radialGradient id="outer">
+		<stop offset="0" stop-color="#282777" />
+		<stop offset=".6" stop-color="#4841c4" />
+		<stop offset="1" stop-color="#5652cc" />
+	</radialGradient>
+
+	<circle fill="url(#outer)" cx="375" cy="375" r="320" />
+	<path fill="url(#inner)" d="
+		M 240 170
+		h 100
+		v 130
+		h -100
+		Z
+		M 410 170
+		h 100
+		v 130
+		h -100
+		Z
+		M 240 370
+		h 100
+		v 95
+		a 35 35 0 0 0 70 0
+		v -95
+		h 100
+		v 95
+		a 135 135 0 0 1 -270 0
+		Z
+	" />
+</svg>

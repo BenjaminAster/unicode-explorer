@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"strict": false,
+		"types": ["@types/node"],
+		"lib": ["ESNext"],
+		"target": "ESNext",
+		"module": "ESNext",
+		"noEmit": true,
+		"moduleResolution": "Bundler",
+		"moduleDetection": "force",
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"allowArbitraryExtensions": true,
+	}
+}

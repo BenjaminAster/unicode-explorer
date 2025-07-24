@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+	<!-- <style>
+		path {
+			fill: #f008;
+			stroke: red;
+			stroke-width: 2;
+		}
+	</style> -->
+	<!-- <image href="../../temp/wiktionary.ico" x="0" y="0" width="100%" height="100%" image-rendering="pixelated" /> -->
+	<path d="
+		M 15 75
+		h 70
+		v 30
+		h -40
+		v 270
+		h 40
+		v 30
+		h -70
+		Z
+		M 395 75
+		h 70
+		v 330
+		h -70
+		v -30
+		h 40
+		v -270
+		h -40
+		Z
+		M 65 155
+		a 21 21 0 1 1 40 0
+		l -15 60
+		a 5.2 5.2 0 0 1 -10 0
+		Z
+		M 120 165
+		h 40
+		l 40 140
+		l 40 -140
+		h 50
+		l 40 140
+		l 40 -140
+		h 40
+		l -55 195
+		h -50
+		l -40 -140
+		l -40 140
+		h -50
+		Z
+	" />
+</svg>

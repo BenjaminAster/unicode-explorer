@@ -1,0 +1,122 @@
+
+:root {
+	--monospace: monospace;
+	font-family: system-ui, sans-serif;
+	/* font-family: system-ui, sans-serif, "Adwaita Mono"; */
+	/* font-family: "Adwaita Mono", "Last Resort"; */
+	/* font-family: "Adwaita Sans", "Last Resort"; */
+	/* font-family: system-ui, sans-serif, "Last Resort"; */
+	/* font-size-adjust: cap-height from-font; */
+	overflow-wrap: break-word;
+	line-height: 1.5;
+	font-size: 1rem;
+	color: light-dark(black, white);
+	background-color: light-dark(white, #111);
+	scrollbar-color: light-dark(#ccc, #333) transparent;
+	scrollbar-width: thin;
+	interpolate-size: allow-keywords;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	-webkit-tap-highlight-color: transparent;
+	scroll-padding-block: .7rem;
+	tab-size: 3;
+}
+
+@font-face {
+	font-family: "Last Resort";
+	src: url("../assets/lastresort.ttf");
+	display: swap;
+}
+
+@font-face {
+	font-family: "Adwaita Sans";
+	src: url("../assets/adwaita-sans-regular.ttf");
+	display: swap;
+}
+
+@font-face {
+	font-family: "Adwaita Mono";
+	src: url("../assets/adwaita-mono-regular.ttf");
+	display: swap;
+	unicode-range: U+1CC00-1CEBF, U+1FB00-1FBFF;
+}
+
+:root {
+	color-scheme: light only;
+}
+
+@media not print {
+	:root[data-theme="dark"] {
+		color-scheme: dark only;
+	}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	min-block-size: 100dvb;
+	margin: 0;
+	padding-top: env(safe-area-inset-top, 0px);
+	padding-right: env(safe-area-inset-right, 0px);
+	padding-bottom: env(safe-area-inset-bottom, 0px);
+	padding-left: env(safe-area-inset-left, 0px);
+}
+
+a, button, input, textarea {
+	all: unset;
+	cursor: revert;
+	outline: revert;
+	appearance: revert;
+}
+
+a {
+	text-decoration-line: underline;
+}
+
+button {
+	display: inline flow-root;
+	cursor: pointer;
+}
+
+textarea {
+	display: block;
+	white-space-collapse: preserve;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 1.3rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+}
+
+h3 {
+	font-size: 1.1rem;
+}
+
+ul {
+	list-style: none;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+dialog {
+	all: unset;
+	display: revert;
+	overlay: revert;
+	inset: 0;
+	position: fixed;
+}
+
+p {
+	margin-block: .2rem .5rem;
+}
