@@ -176,6 +176,7 @@ for (const block of blocks) {
 }
 
 const unicodeVersionToMonthMap: any = {};
+let unicodeVersion: string;
 
 {
 	let currentVersion: string;
@@ -200,6 +201,7 @@ const unicodeVersionToMonthMap: any = {};
 			}
 		}
 	}
+	unicodeVersion = currentVersion;
 }
 
 {
@@ -219,6 +221,7 @@ const unicodeVersionToMonthMap: any = {};
 }
 
 await FS.writeFile(Path.resolve(import.meta.dirname, "../data/ucd.json"), JSON.stringify({
+	unicodeVersion,
 	unicodeVersionToMonthMap,
 	blocks,
 }));

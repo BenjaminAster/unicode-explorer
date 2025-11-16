@@ -35,7 +35,7 @@ const ThemeToggle = (() => {
 })();
 
 const title = "Unicode Explorer";
-const { blocks, unicodeVersionToMonthMap } = await (await fetch(import.meta.resolve("../data/ucd.json"))).json();
+const { blocks, unicodeVersionToMonthMap, unicodeVersion } = await (await fetch(import.meta.resolve("../data/ucd.json"))).json();
 // blocks.splice(10, 60);
 // blocks.splice(60, 200);
 const toCodePointString = (codePoint: number) => codePoint.toString(16).toUpperCase().padStart(4, "0");
@@ -45,10 +45,11 @@ let mainList: HTMLUListElement;
 const consoleDebug = console.debug;
 
 const Console = () => {
+	console.log("asdf");
 	let text$ = "";
 	if (consoleDebug === console.debug) {
 		console.debug = (...params) => {
-			consoleDebug(...params);
+			consoleDebug.call(console, ...params);
 			text$ += params.join(" ") + "\n";
 		}
 	}
@@ -70,6 +71,7 @@ const Console = () => {
 				max-block-size: 15rem;
 				overflow: auto;
 				white-space-collapse: preserve;
+				z-index: 5;
 			}
 
 			div:not(.anchor) {
@@ -105,7 +107,7 @@ const characterElementToDataMap = new WeakMap<HTMLElement, any>();
 		<main>
 			<h1>{title}</h1>
 
-			<p>Click a character to copy it. Long-press or right-click it for more info.</p>
+			<p>Click a character to copy it. Long-press or right-click it for more info. Data as of Unicode {unicodeVersion} (released in {unicodeVersionToMonthMap[unicodeVersion]}).</p>
 
 			<ul>
 				{...blocks.map((block: any) => {

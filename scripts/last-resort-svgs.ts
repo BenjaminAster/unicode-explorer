@@ -47,7 +47,7 @@ const unicodeBlocks = await getUnicodeBlocks();
 				let allPointsInViewBox = true;
 				for (let i = 0; i < currentGlifLines.length; ++i) {
 					const { xString, yString, type } = currentGlifLines[i]
-						.match(/<point x="(?<xString>[-\d]+)" y="(?<yString>[-\d]+)" (?:type="(?<type>.*?)")?\/>/).groups;
+						.match(/<point x="(?<xString>[-\d]+)" y="(?<yString>[-\d]+)"(?: type="(?<type>.*?)")?\/>/).groups;
 					let x = (+xString) - viewBoxX;
 					let y = (-+yString) - viewBoxY;
 
